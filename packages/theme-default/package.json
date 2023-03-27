@@ -1,7 +1,7 @@
 {
-  "name": "xm-ui-theme-default",
+  "name": "sk-ui-theme-default",
   "version": "1.0.0",
-  "description": "新媒组件库主题样式",
+  "description": "主题样式",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",

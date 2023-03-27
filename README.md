@@ -1,3 +1,12 @@
+<!--
+ * @Author: gyp
+ * @Date: 2023-03-27 14:18:52
+ * @LastEditTime: 2023-03-27 16:02:26
+ * @LastEditors: gyp
+ * @Description: 
+ * @FilePath: /smartbi-ui/README.md
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
 # xm-ui
 
 > 新媒组件库
@@ -27,6 +36,6 @@ npm run e2e
 npm test
 ```
 #访问地址
-https://gyipeng.github.io/xm-ui/
+https://github.com/Gyipeng/sk-ui/
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

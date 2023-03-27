@@ -1,8 +1,17 @@
+<!--
+ * @Author: gyp
+ * @Date: 2023-03-27 14:42:33
+ * @LastEditTime: 2023-03-27 14:50:15
+ * @LastEditors: gyp
+ * @Description: 
+ * @FilePath: /smartbi-ui/src/docs/giud.md
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
 # 介绍
 
 ----
 
-`XM-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
+`Smartbi-KA-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
 
 ## 特性
 
@@ -12,13 +21,9 @@
 
 ## 浏览器支持
 
-- 现代浏览器和 IE9 及以上
+- 现代浏览器和 IE10 及以上
 - [Electron](http://electron.atom.io/)
 - [NW.js](http://nwjs.io)
 
 
-## 贡献
-新媒传信前端搬砖小伙们
-
-
-
+ß

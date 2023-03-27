@@ -1,8 +1,9 @@
+
 <template>
   <div  class="pg-index">
     <div class="index-container">
       <img width="300px" src="../assets/img/xm.jpg">
-      <p>一款基于Vue.js轻量级、模块化的 新媒 UI 组件库</p>
+      <p>一款基于Vue.js轻量级、模块化的 思迈特KA UI 组件库</p>
     </div>
     <div class="separate-panel">
       <div class="about">

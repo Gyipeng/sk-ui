@@ -1,12 +1,12 @@
 <template>
   <button
     @click="$emit('click')"
-    class="xm-button"
+    class="sk-button"
     :disabled="disabled"
     :class="[
-    'xm-button--'+type,
+    'sk-button--'+type,
     {'is-plain': plain, 'is-disabled': disabled, 'is-round': round},
-    'xm-button--'+size
+    'sk-button--'+size
     ]"
   >
     <i v-if="icon !== ''" :class="icon"></i>
@@ -15,7 +15,7 @@
 </template>
 <script>
 export default{
-  name: 'xmButton',
+  name: 'skButton',
   props: {
     type: {
       type: String,

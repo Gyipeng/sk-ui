@@ -1,3 +1,4 @@
+
 import Vue from 'vue'
 import Router from 'vue-router'
 import {routerConfig} from './router-config'
@@ -17,7 +18,6 @@ let addComponent = (router) => {
       routes = routes.concat(route.items)
     } else {
       if (route.type === 'pages') {
-
         route.component = r => require.ensure([], () =>
           r(require(`../pages/${route.name}.vue`)))
         return

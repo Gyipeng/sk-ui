@@ -1,3 +1,12 @@
+<!--
+ * @Author: gyp
+ * @Date: 2023-03-27 14:48:16
+ * @LastEditTime: 2023-03-27 14:56:14
+ * @LastEditors: gyp
+ * @Description: 
+ * @FilePath: /smartbi-ui/src/docs/start.md
+ * 可以输入预定的版权声明、个性签名、空行等
+-->
 
 # 快速上手
 
@@ -31,10 +40,10 @@
 可以在项目的入口文件中引入所有组件或所需组件
 
 ```js
-import xmUI from 'xm-ui' // 引入组件库
-import '../node_modules/xm-ui/packages/theme-default/lib/index.css' // 引入样式库
+import skUI from 'smartbi-ka-ui' // 引入组件库
+import '../node_modules/smartbi-ka-ui/packages/theme-default/lib/index.css' // 引入样式库
 
-Vue.use(xmUI)
+Vue.use(skUI)
 ```
 
 ### 单个组件按需使用
@@ -42,25 +51,25 @@ Vue.use(xmUI)
 可以局部注册所需的组件，适用于与其他框架组合使用的场景
 
 ```js
-import { XMButton } from 'xm-ui'
+import { SKButton } from 'smartbi-ka-ui'
 
 export default {
   components: {
-    XMButton
+    SKButton
   }
 }
 ```
 
-在模板中，用 `<xm-button></xm-button>` 自定义标签的方式使用组件
+在模板中，用 `<sk-button></sk-button>` 自定义标签的方式使用组件
 
 ```html
 <template>
   <div>
-    <xm-button>这是一个按钮</xm-button>
+    <sk-button>这是一个按钮</sk-button>
   </div>
 </template>
 ```
 
 ## 自定义主题
 
-`XM-UI` 各个组件的样式变量都存放在 `xm-ui/packages/theme-defualt/common/var.css` 文件中。用户可根据实际需要，自定义组件的样式
+`SK-UI` 各个组件的样式变量都存放在 `sk-ui/packages/theme-defualt/common/var.css` 文件中。用户可根据实际需要，自定义组件的样式

@@ -7,9 +7,9 @@
  * @FilePath: /smartbi-ui/README.md
  * 可以输入预定的版权声明、个性签名、空行等
 -->
-# xm-ui
+# sk-ui
 
-> 新媒组件库
+> 思迈特ka组件库
 
 ## Build Setup
 

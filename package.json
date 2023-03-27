@@ -1,6 +1,6 @@
 {
   "name": "smartbi-ka-ui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "思迈特定制组件库",
   "author": "gyp“\n\n\ngit config --global user.name gyp“ <guoyipeng@feinno.com>",
   "private": false,

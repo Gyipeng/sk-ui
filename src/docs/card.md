@@ -13,7 +13,7 @@
 ### 基础用法
 <div class="demo-block">
   <div >
-    <sk-card  class="mb20" v-width="394"  title="万能查询" desc="明细查询能手：用户通过拖拉拽自定义查询明细数据，支持过滤、汇总等分析方法。" subTitle="立即分析教学视频"> </sk-card>
+    <sk-card  v-width="394"  title="万能查询" desc="明细查询能手：用户通过拖拉拽自定义查询明细数据，支持过滤、汇总等分析方法。" subTitle="立即分析教学视频"> </sk-card>
     </div>
 </div>
 

@@ -16,7 +16,7 @@
 
 > 在使用之前，推荐学习 `Vue` 和 `ES2015` ，并正确配置 `Node.js` v6.x 或以上版本
 
-`XM-UI` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
+`SK-UI` 基于 `Vue.js` 2.x+ 版本开发，所以有必要了解以下基础知识：
 - [Vue 组件](https://cn.vuejs.org/v2/guide/components.html)
 - [单文件组件](https://cn.vuejs.org/v2/guide/single-file-components.html)
 
@@ -52,12 +52,8 @@ Vue.use(skUI)
 
 ```js
 import { SKButton } from 'smartbi-ka-ui'
-
-export default {
-  components: {
-    SKButton
-  }
-}
+import Vue from 'vue'
+Vue.use(SKButton)
 ```
 
 在模板中，用 `<sk-button></sk-button>` 自定义标签的方式使用组件

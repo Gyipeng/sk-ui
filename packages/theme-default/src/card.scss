@@ -53,6 +53,7 @@
     border-radius: 6.67px;
   }
   @include e(container){
+    flex: 1;
     font-size: 14px;
     padding-left: 8px;
   }

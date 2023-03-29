@@ -1,20 +1,60 @@
 'use strict'
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
-
 const path = require('path')
+
+var DEV_SERVER = '10.10.202.47';
+// var DEV_SERVER = '10.10.16.19';
+
+var DEV_PORT_TOMCAT = '18081';
+var DEV_PORT_NODEJS = '3000';
+
+var HOST_TOMCAT = DEV_SERVER + ':' + DEV_PORT_TOMCAT;
+var HOST_NODEJS = DEV_SERVER + ':' + DEV_PORT_NODEJS;
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+       // proxy all requests starting with /api to jsonplaceholder
+       '/smartbi/smartbix/api': {
+        target: 'http://' + HOST_TOMCAT,
+        hostRewrite: HOST_NODEJS,
+        changeOrigin: true
+      },
+      '/smartbi/smartbix/NetWorkAlgorithmServlet': {
+        target: 'http://' + HOST_TOMCAT,
+        pathRewrite: {
+          '^/smartbi/smartbix/NetWorkAlgorithmServlet' : '/smartbi/vision/NetWorkAlgorithmServlet'
+        },
+        hostRewrite: HOST_NODEJS,
+        changeOrigin: true
+      },
+      '/smartbi/smartbix': {
+        target: 'http://' + HOST_NODEJS,
+        pathRewrite: {
+          '^/smartbi/smartbix' : '/'
+        },
+        hostRewrite: HOST_NODEJS,
+        changeOrigin: true
+      },
+      '/smartbi': {
+        target: 'http://' + HOST_TOMCAT,
+        hostRewrite: HOST_NODEJS,
+        changeOrigin: true
+      },
+      '/api': {
+        target: 'http://' + HOST_TOMCAT,
+        hostRewrite: HOST_NODEJS,
+        changeOrigin: true
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: DEV_PORT_NODEJS, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,

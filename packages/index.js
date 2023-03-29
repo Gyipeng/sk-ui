@@ -1,12 +1,14 @@
 
 import Button from './button/index.js'
 import Card from './card/index.js'
+import BussinessCard from './BussinessCard/index.js'
 import style from '../utils/style'
 import filters from '../utils/filter'
 
 const components = [
   Button,
-  Card
+  Card,
+  BussinessCard
 ]
 
 const directives = {
@@ -40,11 +42,13 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   Card,
-  Button
+  Button,
+  BussinessCard
 }
 
 export {
   install,
   Card,
-  Button
+  Button,
+  BussinessCard
 }

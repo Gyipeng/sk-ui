@@ -15,11 +15,14 @@
 </template>
 
 <script>
+
 export default{
   data () {
     return {
       height: document.documentElement.clientHeight
     }
+  },
+  created () {
   }
 }
 </script>

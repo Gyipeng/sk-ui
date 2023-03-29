@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import mainHeader from './components/header.vue'
 import sideNav from './components/side-nav.vue'
 export default {
@@ -23,6 +24,24 @@ export default {
     $route () {
       this.isIndex = this.$route.name === 'index'
     }
+  },
+  created () {
+    const userName = 'admin'
+    const password = 'manager@123'
+    axios({
+      url: '/smartbi/vision/RMIServlet',
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      data: {
+        className: 'UserService',
+        methodName: 'clickLogin',
+        params:`["${userName}","${password}"]`
+      }
+    }).then((res) => {
+      console.log(res.result, '登录结果')  
+    })
   },
   components: {
     mainHeader,

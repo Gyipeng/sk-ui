@@ -12,6 +12,7 @@ Object.keys(routerConfig).forEach((header) => {
 })
 
 let addComponent = (router) => {
+  console.log(router)
   router.forEach((route) => {
     if (route.items) {
       addComponent(route.items)

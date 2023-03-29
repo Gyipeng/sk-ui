@@ -47,5 +47,32 @@ export const routerConfig = {
         }
       ]
     }
+  ],
+  '业务': [
+    {
+      'desc': '业务组件',
+      'path': '/bussiness',
+      'items': [
+        {
+          'desc': 'bussinessCard 卡片',
+          'name': 'bussinessCard',
+          'path': '/bussinessCard'
+        }
+      ]
+    }
+  ],
+  '测试': [
+    {
+      'desc': '测试页面',
+      'path': '/test1',
+      'items': [
+        {
+          'type': 'pages',
+          'desc': '测试',
+          'name': 'test',
+          'path': '/test'
+        }
+      ]
+    }
   ]
 }

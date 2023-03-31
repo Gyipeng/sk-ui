@@ -1,6 +1,7 @@
 # 忽略目录
 #src/
-#node_modules/
+node_modules/
+packages/theme-default/node_modules
 #dist/
 
 # 忽略指定文件

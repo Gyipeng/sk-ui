@@ -44,6 +44,11 @@ export const routerConfig = {
           'desc': 'Card 卡片',
           'name': 'card',
           'path': '/card'
+        },
+        {
+          'desc': 'DynamicCard  动态卡片',
+          'name': 'dynamicCard',
+          'path': '/dynamicCard'
         }
       ]
     }
@@ -54,7 +59,7 @@ export const routerConfig = {
       'path': '/bussiness',
       'items': [
         {
-          'desc': 'bussinessCard 卡片',
+          'desc': 'BussinessCard 卡片',
           'name': 'bussinessCard',
           'path': '/bussinessCard'
         }

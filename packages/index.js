@@ -2,13 +2,15 @@
 import Button from './button/index.js'
 import Card from './card/index.js'
 import BussinessCard from './BussinessCard/index.js'
+import DynamicCard from './dynamicCard/index.js'
 import style from '../utils/style'
 import filters from '../utils/filter'
 
 const components = [
   Button,
   Card,
-  BussinessCard
+  BussinessCard,
+  DynamicCard
 ]
 
 const directives = {
@@ -43,12 +45,14 @@ export default {
   install,
   Card,
   Button,
-  BussinessCard
+  BussinessCard,
+  DynamicCard
 }
 
 export {
   install,
   Card,
   Button,
-  BussinessCard
+  BussinessCard,
+  DynamicCard
 }

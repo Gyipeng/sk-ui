@@ -8,12 +8,12 @@
  * 可以输入预定的版权声明、个性签名、空行等
 -->
 
-# BussinessCard  业务卡片
+# DynamicCard  动态卡片
 ----
 ### 基础用法
 <div class="demo-block">
   <div >
-    <sk-bussiness-card v-width="394" > </sk-bussiness-card>
+    <sk-dynamic-card v-width="394" > </sk-dynamic-card>
     </div>
 </div>
 
@@ -22,7 +22,7 @@
 
 <div class="demo-block">
   <div >
-    <sk-bussiness-card  v-width="394"> </sk-bussiness-card>
+     <sk-dynamic-card v-width="394" > </sk-dynamic-card>
     </div>
 </div>
 

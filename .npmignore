@@ -2,6 +2,10 @@
 #src/
 node_modules/
 packages/theme-default/node_modules
+build/
+plugins/
+src/
+test/
 #dist/
 
 # 忽略指定文件

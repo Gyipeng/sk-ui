@@ -41,7 +41,7 @@
 
 ```js
 import skUI from 'smartbi-ka-ui' // 引入组件库
-import '../node_modules/smartbi-ka-ui/packages/theme-default/lib/index.css' // 引入样式库
+import 'smartbi-ka-ui/packages/theme-default/lib/index.css' // 引入样式库
 
 Vue.use(skUI)
 ```

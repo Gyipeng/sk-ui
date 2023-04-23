@@ -1,6 +1,6 @@
 {
   "name": "smartbi-ka-ui",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "思迈特定制组件库",
   "author": "gyp“\n\n\ngit config --global user.name gyp“ <guoyipeng@feinno.com>",
   "private": false,
@@ -10,8 +10,9 @@
     "lib"
   ],
   "scripts": {
-    "build-lib": "node ./build/webpack-build.js",
-    "start": "node plugins/watch.js",
+    "build-lib": "node ./build/webpack-lib-build.js",
+    "dev-lib": "node plugins/watch.js",
+    "dev-lib-push": "npm run dev --lib",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "tag": "node build/tag.js",
     "publish": "node build/publish.js",
@@ -29,6 +30,8 @@
     "vue": "2.5.2"
   },
   "devDependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2",
     "moment": "2.29.1",
     "vue-codemirror": "^4.0.6",
     "vue-router": "3.0.1",
@@ -108,10 +111,10 @@
     "not ie <= 8"
   ],
   "smarbiWatch": {
-    "watchFolder": "dist",
+    "watchFolder": ["packages"],
     "startCommands": [
-      "npm run dev"
+      "npm run dev-lib-push"
     ],
-    "extensions": "js,png,svg,gif,jpeg,css"
+    "extensions": "js,png,svg,gif,jpeg,css,vue"
   }
 }
